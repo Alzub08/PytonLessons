@@ -50,7 +50,7 @@ class Student:
   def end(self):
     print('Gladness:', self.gladness)
     print('Progress:', self.progress)
-  def live(self):
+  def live(self, day):
     print('Day:',day)
     live_cube = randint(1,3)
     if live_cube == 1:
@@ -64,8 +64,8 @@ class Student:
     
       
 obj = Student('Bob')
+
 for day in range(365):
 	if obj.alive == False:
 		break
 	obj.live(day)
-  

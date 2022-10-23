@@ -1,0 +1,50 @@
+class Animal:
+  def __init__(self, name):
+    self.name = name
+    self.gender = 'None'
+    self.age = 0
+  def live(self):
+    print(self.name, 'is alive')
+  def eat(self):
+    print('I am eating')
+  
+    
+class Kat(Animal):
+  def __init__(self, name):
+    self.name = name
+    self.gender = 'None'
+    self.age = 0
+  def sleap(self):
+    print(self.name,' can sleap')
+  def eat(self):
+    print('It is fish')
+  def speak(self):
+    print('Miaau')
+kat1 = Kat('Murka')  
+    
+class Dog(Animal):
+  def __init__(self, name):
+    self.name = name
+    self.gender = 'None'
+    self.age = 0
+  def play(self):
+    print(self.name,' can playing')
+  def eat(self):
+    super().eat()
+    print('It is meat')
+  def speak(self):
+    print(self.name,' gaw-gavv')
+
+class hamster(Animal):
+  def __init__(self, name):
+    self.name = name
+    self.gender = 'None'
+    self.age = 0
+  def chil(self):
+    print(self.name,' can chiling')
+  def eat(self):
+    print('It is meat')
+  def speak(self):
+    print(self.name,' gaw-gavv')
+
+odj = Animal('')
